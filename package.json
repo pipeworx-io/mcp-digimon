@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-digimon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Digimon API MCP (digi-api.com).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-digimon": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "digimon"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-digimon"
+    "url": "git+https://github.com/pipeworx-io/mcp-digimon.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-3fa11313b718c8fe1b02d69ed3df89c382aa2c3be66c82de512544255049357b",
+    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
   }
 }
