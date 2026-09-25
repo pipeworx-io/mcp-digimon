@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-digimon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Digimon API MCP (digi-api.com).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-3fa11313b718c8fe1b02d69ed3df89c382aa2c3be66c82de512544255049357b",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-3b18c395856ae0c9aab6469cffe23c17504bf3640991ac0dd805517e1da5b2f4",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
