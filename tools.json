@@ -1,0 +1,39 @@
+[
+  {
+    "name": "search_digimon",
+    "description": "Search the Digimon API by name (partial match) and list Digimon creatures. Omit name to list all. Returns id, name, and image for each match. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Partial Digimon name to search for. Omit to list all Digimon."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results per page (default 20, max 100)."
+        },
+        "page": {
+          "type": "number",
+          "description": "Zero-based page number (default 0)."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_digimon",
+    "description": "Get full details for one Digimon by name or numeric id: its level, type, attribute, fields, evolution lines, and English description. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "A Digimon name like \"Agumon\" or a numeric id like \"1\"."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }
+]
